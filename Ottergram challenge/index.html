@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StylesSheet/Styles.css" />
+    <link rel="stylesheet" href="jquery.wm-zoom-1.0.min.css">
+
+    <title>ottergram</title>
+    <script>
+        window.onload(document.getElementsByClassName("thumbnail-image").style.transform = "translate(0,100)");
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo-text">ottergram</h1>
+    </header>
+
+
+
+
+
+
+
+    <ul class="thumbnail-list">
+        <li class="thumbnail-item">
+            <div class="wm-zoom-container my-zoom-1">
+                <div class="wm-zoom-box">
+                    <img class="thumbnail-image wm-zoom-default-img" src="img/otter1.jpg" data-hight-src="img/otter1.jpg">
+                </div>
+                <a href="#">
+                    <span class="thumbnail-title">Barry</span>
+                </a>
+            </div>
+        </li>
+
+        <li class="thumbnail-item">
+                <div class="wm-zoom-container my-zoom-1">
+                <div class="wm-zoom-box">
+                    <img class="thumbnail-image wm-zoom-default-img" src="img/otter1.jpg" data-hight-src="img/otter1.jpg">
+                </div>
+                <a href="#">
+                    <span class="thumbnail-title">Maurice</span>
+                </a>
+            </div>
+            
+        </li>
+
+        <li class="thumbnail-item">
+                <div class="wm-zoom-container my-zoom-1">
+                <div class="wm-zoom-box">
+                    <img class="thumbnail-image wm-zoom-default-img" src="img/otter1.jpg" data-hight-src="img/otter1.jpg">
+                </div>
+                <a href="#">
+                    <span class="thumbnail-title">Lesley</span>
+                </a>
+            </div>
+            
+       
+        </li>
+
+        <li class="thumbnail-item">
+                <div class="wm-zoom-container my-zoom-1">
+                <div class="wm-zoom-box">
+                    <img class="thumbnail-image wm-zoom-default-img" src="img/otter1.jpg" data-hight-src="img/otter1.jpg">
+                </div>
+                <a href="#">
+                    <span class="thumbnail-title">Barbara</span>
+                </a>
+            </div>
+            
+          
+        </li>
+
+
+
+    </ul>
+
+
+
+    <script src="jquery-1.11.1.js"></script>
+    <script src="jquery.wm-zoom-1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.my-zoom-1').WMZoom();
+            $('.my-zoom-2').WMZoom({
+                config: {
+                    inner: true
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

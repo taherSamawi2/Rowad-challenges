@@ -1,0 +1,237 @@
+body {
+    background-color: #ddd;
+    font-family: sans-serif;
+    direction: rtl;
+    font-family: "Expo Arabic";
+    font-size: 15px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.continer {
+    width: 1000px;
+    box-sizing: border-box;
+    background-color: white;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 50px;
+    border: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    /*background: linear-gradient(#ff0084,#33001b);*/
+}
+
+.rightForm {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+    padding: 10px;
+}
+
+.rightForm p {
+    margin-bottom: 35px;
+    font-weight: 700;
+}
+
+.rightForm .inputBlock {
+    box-sizing: border-box;
+    display: block;
+    min-height:80px;
+    margin-bottom: 10px;
+}
+
+.rightForm .inputBlock label {
+    background-color: #624863;
+    color: #fff;
+    float: right;
+    padding: 10px;
+    font-weight: 500;
+    width: 35%;
+    border-radius: 9px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.rightForm input[type="text"],
+.rightForm input[type="email"],
+.rightForm input[type="password"],
+.rightForm input[type="ConfirmPassword"],
+.rightForm input[type="phone"] {
+    width: 60%;
+    padding: 10px;
+    float: right;
+    font-weight: 500;
+    border: 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 9px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #624863;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #624863;
+    color: white;
+    padding: 14px 20px;
+    margin: 50px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+
+.rightForm .inputBlock .passwordContainer{
+      width:60%;
+   float: left;
+    min-height: 20px;
+    
+}
+
+.rightForm .inputBlock .passwordContainer span{
+    display: block;
+}
+
+.rightForm .inputBlock .passwordContainer #type{
+    display: block;
+    font-size: 14px;
+}
+
+.rightForm .inputBlock .passwordContainer .strong{
+    margin-top: 0;
+    display: block;
+    background-color: #c4c1c1;
+}
+
+
+.rightForm .inputBlock .imgContainer {
+    
+    float: left;
+    width: 60%;
+  min-height: 20px;
+    overflow: visible;
+}
+
+.rightForm .inputBlock img {
+    
+    width: 60%;
+        height: 180px;
+
+}
+
+
+#inputBlockPhone {
+    float: right;
+    width: 60%;
+}
+
+#inputBlockPhone span {
+    width: 5%;
+    float: right;
+    color: white;
+    background-color: red;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: center;
+    padding: 4px;
+    display: inline;
+    margin: 8px;
+    margin-top: 10px;
+}
+
+#inputBlockPhone #btnDel {
+    background-color: red;
+}
+
+#inputBlockPhone #btnAdd {
+    background-color: #3b910e;
+}
+
+#error {
+    display: none;
+}
+
+#usernameError,
+#FullNameError,
+#emailError,
+#emailCompareError,
+#passError,
+#ConfirmPassError {
+    color: red;
+    float: right;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.leftForm {
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+}
+
+.popup {
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    background-color: #624863;
+    padding: 5px;
+    color: white;
+    margin: auto;
+    border: 0;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20PX;
+    top: 220px;
+    display: none;
+    right: 300px;
+}
+
+.popup h3 {
+    text-align: right;
+    margin: 20px;
+}
+
+.popup img {
+    width: 25%;
+    float: right;
+    margin-right: 20px;
+    height: auto;
+    overflow: hidden;
+}
+
+.popup p {
+    margin-top: 62px;
+}
+
+.popup button {
+    background-color: #f49c0d;
+    color: #624863;
+    border: 0px;
+    font-size: 18px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 28px;
+    padding: 7px 15px;
+    font-weight: 900;
+}
+
+button {
+    background-color: #f49c0d;
+    color: #624863;
+    border: 0px;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 7px 15px;
+    font-weight: 900;
+}

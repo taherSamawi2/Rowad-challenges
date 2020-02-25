@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+
+
+    </style>
+    <title> Bootstrap Forms</title>
+</head>
+
+<body class="container">
+    <form action=" " method="post" id="contact_form">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>
+                <center>
+                    <h2><b>Registration Form</b></h2>
+                </center>
+            </legend><br>
+
+            <!-- Text input-->
+
+            <div class="form-group  has-success has-feedback form-group-lg ">
+                <label class="sr-only">Username</label>
+                <input name="user_name" placeholder="Username" type="text" class="form-control " disabled>
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            </div>
+
+            <!-- checkbox input-->
+            <div class="custom-control custom-switch ">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1"> 
+                <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+            </div>
+            <!-- Radio input-->
+
+            <div class="form-check ">
+                <label class="form-check-label">Gender:</label><br>
+                <div class="form-check-inline"><input type="radio" name="gender" value="male" class="form-check-input" checked> Male<br></div>
+                <div class="form-check-inline"><input type="radio" name="gender" value="female" class="form-check-input"> Female<br>
+                </div>
+
+            </div>
+
+            <!-- checkbox input-->
+            <div class="form-check ">
+                <label class="form-check-label">Hobbies:</label><br>
+
+                <div class="form-check-inline"> <input type="checkbox" name="vehicle1" value="Bike" class="form-check-input"> option1</div>
+                <div class="form-check-inline"> <input type="checkbox" name="vehicle2" value="Car" class="form-check-input"> option2</div>
+                <div class="form-check-inline"><input type="checkbox" name="vehicle2" value="Car" class="form-check-input"> option3</div>
+            </div>
+
+            <!-- select -->
+            <div class="form-group">
+                <label class="control-label">Department </label>
+                <select name="department" class="form-control" multiple>
+      <option value="">Select your Department/Office</option>
+      <option>Department of Engineering</option>
+      <option>Department of Agriculture</option>
+      <option >Accounting Office</option>
+      <option >Tresurer's Office</option>
+      <option >MPDC</option>
+      <option >MCTC</option>
+      <option >MCR</option>
+      <option >Mayor's Office</option>
+      <option >Tourism Office</option>
+    </select>
+
+            </div>
+
+            <!-- email-->
+            <div class="form-group">
+                <label class="control-label">E-Mail</label>
+                <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+            </div>
+            <!-- phone input-->
+            <div class="form-group">
+                <label class="control-label">phone No.</label>
+                <input name="contact_no" placeholder="(639)" class="form-control" type="text">
+            </div>
+
+            <!--  Textarea-->
+            <div class="form-group">
+                <label class="control-label">comment</label><br>
+                <textarea rows="4" cols="30" class="form-control"></textarea>
+            </div>
+
+            <!-- submit and reset -->
+            <input type="submit" value="Submit">
+            <input type="reset">
+
+
+        </fieldset>
+    </form>
+
+    <script>
+
+
+    </script>
+</body>
+
+</html>

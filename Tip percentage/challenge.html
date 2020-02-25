@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<htm>
+
+    <head>
+
+        <link href="css/challenge.css" rel="stylesheet" type="text/css">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <script src="js/challenge.js"></script>
+    </head>
+
+    <body>
+
+        -->
+        <section class="border">
+            <center>
+                <h1>الحسابات </h1>
+            </center>
+            <fieldset>
+                <legend>
+                    المبيعات
+
+                </legend>
+
+                    <label for="total">الاجمالي :</label>
+                    <input type="text" placeholder="ادخل اجمالي المبلغ " name="total" id="total">
+
+                    <label for="liquid">قيمة المشروبات :</label>
+                    <input type="text" placeholder="ادخل قيمة المشروب" name="liquid" id="liquid">
+                    
+                    <label for="ratio">النسبة :</label>
+                    <select id="ratio" onclick="collect()" name="ratio">
+                    <option value="0.01">1%</option>
+                    <option value="0.02">2%</option>
+                    <option value="0.03">3%</option>
+                    <option value="0.04">4%</option>
+                    <option value="0.05">5%</option>
+                    </select>
+                    <input type="submit" value="حساب البقشيش" onclick="collect()" >
+                      
+				<div class="tiptext" >
+				
+				<label >  نسبة البقشيش :</label> 
+                   <label  id="tip"></label> 
+				</div>
+				
+            </fieldset>
+
+
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+</htm>

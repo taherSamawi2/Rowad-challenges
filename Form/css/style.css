@@ -1,0 +1,19 @@
+body {
+    background-color: #ffffff;
+    font-family: sans-serif;
+    direction: rtl;
+    font-family: "Expo Arabic";
+     
+    /*
+    background-image: url(_n.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;*/
+}
+
+#content{
+    
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,67 @@
+body {
+    
+    background: linear-gradient(#777, #000);
+    animation-name: background;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 700px;
+}
+
+@Keyframes background {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+      background-image: url("stars.png");
+    }
+}
+
+
+
+@Keyframes earth {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sun {
+    animation-name: earth;
+    animation-duration: 30s;
+    animation-fill-mode: both;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 200px;
+    margin-left: 500px;
+    border: 0px solid white;
+    border-radius: 100%;
+    background: radial-gradient(orange, #F23C11);
+}
+
+.earth {
+    
+    animation-name: earth;
+    animation-duration: 30s;
+    animation-fill-mode: both;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-left: 300px;
+    border: 0px solid white;
+    border-radius: 100%;
+    background: radial-gradient( #64c364, darkgreen);
+}
+
+.soon {
+    width: 50px;
+    height: 50px;
+    margin-left: 150px;
+    border: 0px solid white;
+    border-radius: 100%;
+    background-color: white;
+}

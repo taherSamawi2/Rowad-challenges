@@ -1,0 +1,853 @@
+/* Start Main Rulez */
+
+body {
+    direction: rtl !important;
+    float: right !important;
+    text-align: right;
+        font-family: "Expo Arabic";
+
+        
+}
+
+.container {
+
+}
+
+.clearfix {
+    clear: both;
+}
+
+#more {display: none;}
+
+/* End Main Rulez */
+
+
+/* Start Header */
+
+.header .slider {
+    height: 550px;
+    overflow: hidden;
+    border-bottom: 4px solid #1CC7FF;
+}
+
+.header .slider img {
+    width: 100%;
+}
+
+.header .slider .intro {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    top: 430px;
+    right: 660px;
+}
+
+.header .slider .intro h1 {
+    border-top: 4px solid #B92651;
+    border-bottom: 4px solid #B92651;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.header .slider .intro button {
+    background: #B92651;
+    width: 200px;
+    border: 2px solid #B92651;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+
+
+nav .navbar-brand
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.fixed-top {
+        padding: 0;
+}
+
+.header .navbar h3 {
+    float: right;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header .navbar span {
+    color: #fff;
+}
+
+.header .navbar ul {
+    list-style: none;
+    overflow: hidden;
+    padding-left: 0px;
+    float: left;
+}
+
+.header .navbar ul li {
+    float: left;
+    padding-left: 30px;
+}
+
+.header .navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header .navbar ul li i {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.header .navbar ul li.active a,
+.header .navbar ul li a:hover {
+    color: #ffffff;
+}
+
+
+/* End Header */
+
+
+/* Starts Cart */
+
+#cart-nav-btn {
+    background: none;
+    border: 0px;
+    color: #5d5d5d
+    
+}
+.cart {
+    position: fixed;
+    top: 550px;
+    left: 0;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 3px 3px 20px #dbd5d5, -3px -3px 20px #dbd5d5;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 150px;
+    z-index: 5;
+    font-size: 14px;
+
+}
+.cart h3{
+    color: #444;
+}
+
+.cart p{
+    color: gray;
+}
+
+/* End Cart */
+
+
+/* Starts Flowers */
+
+.flowers {
+ margin-bottom: 15px;
+}
+
+
+.Flower {
+    box-sizing: border-box;
+    margin:20px;
+    text-align: center;
+    box-shadow: 3px 3px 20px #dbd5d5, -3px -3px 20px #dbd5d5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+      display: none;
+}
+
+
+ .Flower:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.Flower .icon-cart {
+        background-color:goldenrod;
+color: #fff;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    align-items: center;
+    right: 0;
+}
+
+
+
+ .Flower img {
+    width: 60%;
+    transition: all 1s ease-in-out;
+    animation-duration: 1s;
+     align-content: center !important;
+     margin-right: 27px;
+}
+ .Flower .product-selected {
+    position: absolute;
+     top: 20px;
+    left:50px;
+     
+    z-index: 1;
+    visibility: hidden
+}
+
+.Flower h2 {
+    color: #555;
+    font-weight: 500;
+}
+
+.Flower p {
+    line-height: 1.5;
+    color: #888;
+    text-align: center;
+	    font-family: 'Roboto', sans-serif;
+
+}
+ .Flower button {
+    background: linear-gradient(#ff0084, #A83279);
+    padding: 15px 50px;
+    border-radius: 10px;
+    color: #fff;
+    border: 0px;
+
+
+}
+
+@Keyframes toCart {
+
+    100% {
+         transform: translate(170px,-115px) scale(0) rotate(30deg);
+        
+    }
+}
+
+
+/* End Flowers */
+
+
+/* Start About Me */
+
+.about-me {
+    background-color: #ffd8ec;
+    overflow: hidden;
+}
+
+.about-me .info {
+    width: 60%;
+    box-sizing: border-box;
+    float: right;
+    background-color: ;
+    padding: 10px 0 0 30px;
+}
+
+.about-me .info h2 {
+    color: #777;
+    font-weight: 700;
+}
+
+.about-me .info p {
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.about-me .info>p:last-of-type {
+    margin-top: 20px;
+}
+
+.about-me .info .hobbies {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.about-me .info .hobbies .content {
+    width: 50%;
+    float: right;
+    min-height: 70px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.about-me .info .hobbies .content .icon {
+    width: 12%;
+    float: right;
+    margin-left: 10px;
+}
+
+.about-me .info .hobbies .content .icon img {
+    max-width: 100%;
+    float: right;
+}
+
+.about-me .info .hobbies .content .text {
+    width: 80%;
+    float: right;
+}
+
+.about-me .info .hobbies .content .text h3 {
+    color: #444;
+    margin: 0;
+    font-size: 16px;
+}
+
+.about-me .info .hobbies .content .text p {
+    padding-left: 20px;
+}
+
+.about-me .image {
+    width: 40%;
+    float: left;
+}
+
+.about-me .image img {
+    width: 100%;
+    overflow: hidden;
+    height: 373px;
+}
+
+
+/* End About Me */
+
+
+/* Start Portfolio */
+
+.portfolio {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.portfolio h2 {
+    color: #444;
+}
+
+.portfolio p {
+    margin-bottom: 45px;
+    color: #444;
+    line-height: 1.7;
+}
+
+.portfolio .our-work {
+    overflow: hidden;
+}
+
+.portfolio .our-work div {
+    float: right;
+    width: 33.33333%;
+    margin-bottom: 10px;
+}
+
+.portfolio .our-work div img {
+    width: 93%;
+    height: 300px;
+    margin: 10px;
+    background-color: #fff;
+    border: 2px solid #8F7C5E;
+    box-shadow: 5px 5px 10px #ccc, -5px -5px 10px #ccc;
+}
+
+
+/* End Portfolio */
+
+
+/* Start Content Me */
+
+.content-me {
+    overflow: hidden;
+    background-color: #2C2C2C;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.content-me .info {
+    width: 45%;
+    margin-left: 50px;
+    float: right;
+}
+
+.content-me .info h2 {
+    color: #fff;
+    margin-right: 30px
+}
+
+.content-me .info p {
+    color: #fff;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.content-me .info p strong {
+    color: #D74571;
+}
+
+.content-me .form {
+    width: 50%;
+    float: right;
+}
+
+.content-me .form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.content-me .form label:hover {
+    color: #D74571;
+}
+
+.content-me .form input[type="text"],
+.content-me .form input[type="password"],
+.content-me .form input[type="email"] {
+    background-color: #ededed;
+    width: 80%;
+    border: 0;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.content-me .form textarea {
+    background-color: #ededed;
+    width: 80%;
+    border: 0;
+    padding: 15px;
+    height: 200px;
+}
+
+.content-me .form input[type="submit"] {
+    background-color: #D74571;
+    width: 85%;
+    border-radius: 8px;
+    border: 0;
+    color: #fff;
+    padding: 15px 50px;
+}
+
+.content-me .form input[type="submit"]:hover {
+    background-color: #ad214b;
+}
+
+
+/* End Content Me */
+
+
+/* Start footer */
+
+.footer {
+    background-color: #202020;
+    padding: 20px 0;
+    overflow: hidden;
+    color: #999;
+}
+
+.footer span {
+    float: right;
+}
+
+.footer ul {
+    float: left;
+    list-style: none;
+    margin: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 2px;
+}
+
+.footer ul li:hover {
+    color: #0FA9DC;
+}
+
+
+/* End footer */
+
+@media screen and ( max-width: 700px) {
+    /* Start Header */
+    .header .slider {
+        height: 400px;
+        overflow: hidden;
+        border-bottom: 4px solid #1CC7FF;
+    }
+    .header .slider img {
+        width: 100%;
+        height: 400px;
+    }
+    .header .slider .intro {
+        color: #fff;
+        position: absolute;
+        text-align: center;
+        margin: auto;
+        top: 430px;
+        right: 660px;
+    }
+    .header .slider .intro h1 {
+        border-top: 4px solid #B92651;
+        border-bottom: 4px solid #B92651;
+        padding: 15px;
+        font-weight: 500;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .header .slider .intro button {
+        background: #B92651;
+        width: 200px;
+        border: 2px solid #B92651;
+        color: #fff;
+        padding: 15px 20px;
+        border-radius: 6px;
+        font-weight: 500;
+    }
+    .header .navbar {
+        background-color: #D74571;
+        color: #c7bdbd;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-bottom: 5px;
+    }
+    .header .navbar .nav-phone-icon {
+        color: #fff;
+        float: left;
+        margin: 18px 10px;
+        font-size: 30px;
+        display: block;
+    }
+    .header .navbar h3 {
+        float: right;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 20px
+    }
+    .header .navbar span {
+        color: #fff;
+    }
+    .header .navbar ul {
+        list-style: none;
+        overflow: hidden;
+        padding-left: 0px;
+        float: left;
+        display: none;
+    }
+    .header .navbar ul li {
+        float: right;
+        padding-left: 30px;
+    }
+    .header .navbar ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+    }
+    .header .navbar ul li i {
+        margin-left: 5px;
+        font-size: 20px;
+    }
+    .header .navbar ul li.active a,
+    .header .navbar ul li a:hover {
+        color: #ffffff;
+    }
+    /* End Header */
+    /* Starts Flowers */
+    .Flowers {
+        overflow: hidden;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: auto;
+    }
+    .Flowers .Flower {
+        box-sizing: border-box;
+        width: 70%;
+        display: block;
+        min-height: 600px;
+        float: none;
+        margin-right: 70px;
+        margin-bottom: 40px;
+    }
+    .Flowers .Flower img {
+        width: 100%;
+        height: 400px;
+    }
+    /* End Flowers */
+    /* Start About Me */
+    .about-me {
+        background-color: #ffd8ec;
+        overflow: hidden;
+    }
+    .about-me .info {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: ;
+        padding: 40px;
+    }
+    .about-me .info h2 {
+        color: #777;
+        font-weight: 700;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+    .about-me .info p {
+        line-height: 1.7;
+        text-align: justify;
+    }
+    .about-me .info .hobbies {
+        overflow: hidden;
+        margin-top: 30px;
+    }
+    .about-me .info .hobbies .content {
+        width: 50%;
+        float: right;
+        min-height: 70px;
+        margin: 0;
+        overflow: hidden;
+    }
+    .about-me .info .hobbies .content .icon {
+        width: 12%;
+        float: right;
+        margin-left: 10px;
+    }
+    .about-me .info .hobbies .content .icon img {
+        max-width: 100%;
+        float: right;
+    }
+    .about-me .info .hobbies .content .text {
+        width: 80%;
+        float: right;
+    }
+    .about-me .info .hobbies .content .text h3 {
+        color: #444;
+        margin: 0;
+        font-size: 16px;
+    }
+    .about-me .image {
+        width: 100%;
+    }
+    .about-me .image img {
+        width: 100%;
+        overflow: hidden;
+        height: 373px;
+    }
+    /* End About Me */
+    /* Start Portfolio */
+    .portfolio {
+        padding-top: 50px;
+        padding-bottom: 70px;
+        text-align: center;
+    }
+    .portfolio h2 {
+        color: #444;
+    }
+    .portfolio p {
+        margin-bottom: 45px;
+        color: #444;
+        line-height: 1.7;
+    }
+    .portfolio .our-work {
+        overflow: hidden;
+    }
+    .portfolio .our-work div {
+        float: right;
+        width: 45%;
+        margin: 10px;
+    }
+    .portfolio .our-work div:last-Of-type {
+        display: none;
+    }
+    /* End Portfolio */
+    /* Start Content Me */
+    .content-me {
+        overflow: hidden;
+        background-color: #2C2C2C;
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .content-me .info {
+        width: 90%;
+        text-align: center;
+        margin-right: 20px;
+        border-bottom: 2px solid #555;
+        margin-bottom: 50px;
+    }
+    .content-me .info h2 {
+        color: #fff;
+    }
+    .content-me .info p {
+        color: #fff;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        text-align: justify;
+        line-height: 1.7;
+    }
+    .content-me .info p strong {
+        color: #D74571;
+    }
+    .form {
+        width: 90%;
+        margin-right: 20px;
+    }
+    .content-me .form label {
+        display: block;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    .content-me .form label:hover {
+        color: #D74571;
+    }
+    .content-me .form input[type="text"],
+    .content-me .form input[type="password"],
+    .content-me .form input[type="email"] {
+        background-color: #ededed;
+        width: 80%;
+        border: 0;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .content-me .form textarea {
+        background-color: #ededed;
+        width: 80%;
+        border: 0;
+        padding: 15px;
+        height: 200px;
+    }
+    .content-me .form input[type="submit"] {
+        background-color: #D74571;
+        width: 85%;
+        border-radius: 8px;
+        border: 0;
+        color: #fff;
+        padding: 15px 50px;
+    }
+    .form input[type="submit"]:hover {
+        background-color: #ad214b;
+    }
+    /* End Content Me */
+    /* Start footer */
+    .footer {
+        background-color: #202020;
+        padding: 20px 0;
+        overflow: hidden;
+        color: #999;
+    }
+    .footer span {
+        margin-right: 20px;
+        display: block;
+    }
+    .footer ul {
+        margin-left: 10px;
+        list-style: none;
+        text-align: center;
+        display: block;
+        margin: 0;
+    }
+    .footer ul li {
+        display: inline-block;
+        padding: 2px;
+    }
+    .footer ul li:hover {
+        color: #0FA9DC;
+    }
+    /* End footer */
+}
+
+
+
+
+/* start all product in cart */
+
+
+fieldset {
+    width: 1000px;
+    margin: 0px auto;
+    /*background: linear-gradient(#d86319, #FCB01A);*/
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #bebebe;
+    color: #281f36;
+    border-radius: 10px;
+    text-align: right;
+    border: 0 solid;
+}
+
+
+fieldset legend {
+    background-color: #f50000;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+
+table {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+th,td {
+    padding: 10px 45px;
+    color: #333;
+    text-align: center;
+}
+th{
+    font-weight: 900;
+    border-top: 2px solid #666;
+    
+    
+}
+#img {
+   width: 100px; 
+    height: 80px;
+    
+}
+
+#img img {
+    width: 100%;
+}
+
+
+#allProInCart{
+    animation-name: showCart;
+    margin-top: 10px;
+     padding: 25px;
+    width: 1000px;
+    margin-right: 70px;
+    
+}
+#tabel
+
+
+@Keyframes showCart {
+
+    50% {
+        
+    } 
+    
+    100% {
+         transform: translate(50px) scale(0);
+        
+    }
+}
+
+/* End all product in cart */

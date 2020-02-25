@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/challenge.css" rel="stylesheet" type="text/css">
+    <title>Java Script</title>
+    <script>
+     
+    </script>
+</head>
+
+<body>
+
+
+
+    <section class="continer">
+        <section class="rightForm">
+
+            <form action="">
+                <p>انشى حسابك بشكل مجاني واستمتع بالخدمات التي يقدمها الموقع</p>
+                <div class="inputBlock">
+
+                    <label for="UserName">  اسم المستخدم *</label>
+                    <input type="text" name="UserName" id="UserName" placeholder="ادخل اسم المستخدم">
+                    <span id="usernameError"></span>
+                </div>
+                <div class="clearfix"></div>
+
+
+                <div class="inputBlock">
+                    <label for="FullName">الاسم كامل *</label>
+                    <input type="text" name="FullName" id="FullName" placeholder="ادخل اسمك بالكامل">
+                    <span id="FullNameError"></span>
+                </div>
+                <div class="clearfix"></div>
+
+
+                <div class="inputBlock">
+                    <label for="email">البريد الالكتروني  *</label>
+                    <input type="email" name="email" id="email" placeholder="ادخل البريد الالكتروني">
+                    <span id="emailError">
+                      
+                        </span>
+                </div>
+                <div class="clearfix"></div>
+
+
+
+                <div class="inputBlock">
+                    <label for="ConfirmEmail"> تاكيد البريد الالكتروني *</label>
+                    <input type="Email" name="ConfirmEmail" id="ConfirmEmail" placeholder="ادخل البريد الالكتروني مره اخرى">
+
+                    <span id="emailCompareError">
+                        </span>
+                </div>
+                <div class="clearfix"></div>
+
+
+                <div class="inputBlock" id="inputBlock">
+                    <label for="phone">رقم الهاتف * </label>
+                    <div id="inputBlockPhone">
+                        <input type="phone" name="phone" id="phone" placeholder="ادخل رقم الهاتف">
+                        <span id="btnAdd" onclick="createTxt()">+</span>
+
+                    </div>
+                    <div class="clearfix"></div>
+                    <span id="phoneError">
+                      
+                        </span>
+                </div>
+                <div class="clearfix"></div>
+
+
+
+                <div class="inputBlock">
+                    <label for="password">كلمة السر *</label>
+                  
+                    <input type="password" name="password" id="password" placeholder="ادخل كلمة السر">
+                      <div class="passwordContainer">
+                    <span id="passError"></span>
+                    <p id="type"></p>
+                    <div class="strong"><p id="strongRange"></p> </div>
+                
+                    </div>
+
+
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="inputBlock">
+                    <label for="ConfirmPassword">تاكيد كلمة السر *</label>
+                    <input type="Password" name="ConfirmPassword" id="ConfirmPassword" placeholder="ادخل كلمة السر مرة اخرى">
+                    <span id="ConfirmPassError"> </span>
+                </div>
+                <div class="clearfix"></div>
+
+
+
+                <div class="inputBlock">
+                    <label for="image"> اضافة صورة *</label>
+                    <div class="imgContainer">
+                        <input type='file' id="imgInp" />
+                        <img id="blah" src="#" alt="your image" />
+
+                    </div>
+                </div>
+
+                </div>
+                <div class="clearfix"></div>
+
+                <input type="submit" value="انشاء الحساب " name="createAccount" id="createAccount">
+                </div>
+            </form>
+
+
+        </section>
+
+        <section class="leftForm">
+
+            <img src="img/2779076.png">
+            <button id="pop" onclick="showPop()">اضغط هنا</button>
+        </section>
+    </section>
+
+    <section class="popup" id="popup">
+        <h3> مرحبا : </h3>
+
+        <img src="img/2779076.png">
+        <p>انشى حسابك بشكل مجاني واستمتع بالخدمات التي يقدمها الموقع</p>
+        <button id="hide" onclick="hide()">شكرا لكم </button>
+    </section>
+
+
+
+
+    <script src="js/challenge.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+<script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    $('#blah').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $("#imgInp").change(function() {
+            readURL(this);
+        });
+
+    </script>
+</body>
+
+</html>

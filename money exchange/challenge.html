@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<htm>
+
+    <head>
+
+        <link href="css/challenge.css" rel="stylesheet" type="text/css">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <script src="js/challenge.js"></script>
+    </head>
+
+    <body>
+
+        <section class="border">
+            <center>
+                <h1>محول العملات </h1>
+            </center>
+            <fieldset>
+                <legend>
+                    اسعار العملات
+
+                </legend>
+
+                <label for="amount">المبلغ :</label>
+                <input type="text" placeholder="ادخل اجمالي المبلغ " name="amount" id="amount">
+
+                <label for="currency">النسبة :</label>
+                <select id="currency" name="currency" onclick="collect()" >
+                    <option value="1">دولار امريكي</option>
+                    <option value="2">ريال يمني</option>
+                    <option value="3">ريال سعودي</option>
+                    <option value="4">يورو </option>
+                </select>
+                
+                <table>
+                    <tr>
+                        <th>العملة</th>
+                        <th>سعر الصرف</th>
+                        <th>الاجمالي</th>
+                    </tr>
+
+                    <tr>
+                        <td>دولار امريكي</td>
+                        <td id="oneDoller"> 0</td>
+                        <td id="TolalDoller"> 0</td>
+                    </tr>
+
+                    <tr>
+                        <td>ريال يمني </td>
+                        <td id="oneRY"> 0</td>
+                        <td id="TolalRY"> 0</td>
+                    </tr>
+
+                    <tr>
+                        <td>ريال سعودي </td>
+                     <td id="oneRS"> 0</td>
+                        <td id="TolalRS"> 0</td>
+                    </tr> 
+                    
+                    <tr>
+                        <td>يورو اوربي  </td>
+                    <td id="oneYoro"> 0</td>
+                        <td id="TolalYoro"> 0</td>
+                    </tr>
+
+
+
+                </table>
+
+
+
+
+            </fieldset>
+
+
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+</htm>

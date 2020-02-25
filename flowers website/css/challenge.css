@@ -1,0 +1,180 @@
+body {
+
+    font-family: 'expo Arabic';
+}
+
+
+
+
+
+.form-group {
+    box-sizing: border-box;
+    display: inline-block;
+    min-height:60px;
+    margin-bottom: 10px;
+}
+
+.btnPOP {
+    text-align: left;
+}
+
+
+.input-group-addon{
+min-width: 160px;
+}
+
+
+.passwordContainer{
+ 
+    min-height: 20px;
+    
+}
+
+ .passwordContainer span{
+    display: block;
+}
+
+ .passwordContainer #type{
+    display: block;
+    font-size: 14px;
+}
+
+ .passwordContainer .strong{
+    margin-top: 0;
+    display: block;
+    background-color: #c4c1c1;
+}
+
+
+.imgContainer {
+    
+    float: left;
+    width: 60%;
+  min-height: 20px;
+    overflow: visible;
+}
+
+.form-group img {
+    
+    width: 60%;
+        height: 180px;
+
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #624863;
+    color: white;
+    padding: 14px 20px;
+    margin: 50px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+#inputBlockPhone {
+    float: right;
+    width: 60%;
+}
+
+#inputBlockPhone span {
+    width: 5%;
+    float: right;
+    color: white;
+    background-color: red;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: center;
+    padding: 4px;
+    display: inline;
+    margin: 8px;
+    margin-top: 10px;
+}
+
+#inputBlockPhone #btnDel {
+    background-color: red;
+}
+
+#inputBlockPhone #btnAdd {
+    background-color: #3b910e;
+}
+
+#error {
+    display: none;
+}
+
+#usernameError,
+#FullNameError,
+#emailError,
+#emailCompareError,
+#passError,
+#ConfirmPassError {
+    color: red;
+    float: right;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.leftForm {
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+}
+
+.popup {
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    background-color: #624863;
+    padding: 5px;
+    color: white;
+    margin: auto;
+    border: 0;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20PX;
+    top: 220px;
+    display: none;
+    right: 300px;
+}
+
+.popup h3 {
+    text-align: right;
+    margin: 20px;
+}
+
+.popup img {
+    width: 25%;
+    float: right;
+    margin-right: 20px;
+    height: auto;
+    overflow: hidden;
+}
+
+.popup p {
+    margin-top: 62px;
+}
+
+.popup button {
+    background-color: #f49c0d;
+    color: #624863;
+    border: 0px;
+    font-size: 18px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 28px;
+    padding: 7px 15px;
+    font-weight: 900;
+}
+
+button {
+    background-color: #f49c0d;
+    color: #624863;
+    border: 0px;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 7px 15px;
+    font-weight: 900;
+}

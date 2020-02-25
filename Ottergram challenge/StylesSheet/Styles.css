@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'lakeshore';
+    src: url('../fonts/LAKESHOR-webfont.eot');
+    src: url('../fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/LAKESHOR-webfont.woff') format('woff'), url('../fonts/LAKESHOR-webfont.ttf') format('truetype'), url('../fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-size: 10px;
+}
+
+header,
+footer {
+    padding: 8px 4px;
+    background-color: #235889;
+    text-align: center;
+    margin: 0;
+}
+
+.logo-text {
+    font-family: 'lakeshore';
+    font-size: 40px;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+.thumbnail-item {
+    border: 1px solid rgb(100%, 100%, 100%);
+    border: 1px solid rgba(100%, 100%, 100%, 0.8);
+    position: relative;
+
+}
+
+.thumbnail-title {
+    background: #6495ED;
+    color: rgb(202, 238, 255);
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 4px;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.thumbnail-list {
+    
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.thumbnail-image {
+        margin-left: 600px;
+    width: 600px;
+    margin: auto;
+    opacity: .8;
+    animation-name: Lesy;
+ 
+    animation-duration: 4s;
+}
+
+.thumbnail-image:hover {
+    opacity: 1;
+}
+
+@keyFrames Lesy {
+    from {
+        transform: translate(0, -100px);
+        transform: all 2s ease-in-out;
+    }
+    to {
+        transform: translate(0, 0);
+        transform: all 2s ease-in-out;
+    }
+}

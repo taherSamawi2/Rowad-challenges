@@ -1,0 +1,367 @@
+body {
+    background-color: #ffffff;
+    font-family: sans-serif;
+    /*
+    background-image: url(_n.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;*/
+}
+
+@Keyframes toCircle {
+    10% {
+        border-radius: 40px 40px 40px 40px;
+        top: 0;
+        left: 0;
+    }
+    40% {
+        border-radius: 0px 0px 0px 0px;
+    }
+    60% {
+        border-radius: 40% 40% 40% 40%;
+    }
+    100% {
+        border-radius: 100% 100% 100% 100%;
+        top: 0px;
+        left: 500px;
+    }
+}
+
+.css3Block {
+    animation-name: toCircle;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    position: relative;
+    border: 2px black solid;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 20px 20px 20px 20px;
+    background: linear-gradient(#ED2583, #FCB01A);
+}
+
+nav {
+    background-color: #262626;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 4%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+nav ul li a:active {
+    color: #b9095b;
+}
+
+nav ul li a:hover {
+    background-color: #d4a200;
+    color: black;
+    top: 50px;
+}
+
+nav ul .home ul {
+    display: none;
+}
+
+nav ul .home:hover {
+    display: block;
+    margin: 100px;
+}
+
+nav .login:hover fieldset {
+    display: block;
+    
+}
+
+fieldset {
+    font-family: "expo", "Expo Arabic";
+    width: 700px;
+    margin-top: 20px;
+    z-index:50;
+    direction: rtl;
+    background: linear-gradient(#d86319, #FCB01A);
+    color: #281f36;
+    border-radius: 10px;
+    text-align: right;
+    border: 0 solid;
+    display: none;
+    position: absolute;
+}
+
+fieldset span {
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+fieldset legend {
+    background-color: brown;
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+fieldset label {
+    font-weight: 550;
+    margin: 30px 10px;
+}
+
+fieldset legend:hover span {
+    visibility: visible;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    border: 0;
+    background-color: #FFE1AA;
+    display: block;
+    width: 50%;
+    margin: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 50px;
+    margin-top: 10px;
+    margin-right: 25%;
+    border-radius: 10px;
+    background-color: #513C5B;
+    border: 0;
+    color: white;
+}
+
+h1 {
+    font-family: cursive;
+    background-color: #FFC301;
+    font-size: 5vw;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px white;
+}
+
+.border {
+    /*  border-width: 10px 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;*/
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.leftSide {
+    margin: 5px;
+    background-color: white;
+    width: 19%;
+    float: left;
+}
+
+.leftSide h2 {
+    background-color: black;
+    color: #FFC301;
+    padding: 10px;
+}
+
+.leftSide p {
+    padding: 5px;
+}
+
+.rightSide {
+    margin: 5px;
+    width: 19%;
+    float: left;
+}
+
+.rightSide h2 {
+    background-color: black;
+    color: #FFC301;
+    padding: 10px;
+}
+
+.content {
+    margin: 5px;
+    width: 59%;
+    float: left;
+    /*  -webkit-border-radius: 10px;
+    -moz-border-radius: 10px; 
+*/
+}
+
+.content .top p {
+    -webkit-column-count: 4;
+    column-count: 4;
+    column-gap: 30px;
+    column-rule-style: dotted;
+    column-rule-color: #FFC301;
+    column-rule-width: medium;
+    padding: 5px;
+    color: #2d2e2f;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.content h2 {
+    background-color: #FFC301;
+    padding: 10px;
+}
+
+.product {
+    border: 2px solid #262626;
+    float: left;
+    background-color: white;
+    margin: 9px;
+    width: 30%;
+}
+
+.product img {
+    width: 80%
+}
+
+.product .name {
+    color: white;
+    padding: 10px;
+    background-color: black;
+}
+
+.product p {
+    color: #2d2e2f;
+    padding: 5px;
+    text-align: left;
+}
+
+.product .price {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0px;
+    border: 2px solid #FFC301;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.details {
+    border: 2px solid #262626;
+    background-color: white;
+    margin: 9px;
+    width: 30%;
+   
+  
+    position: absolute;
+    display: none;
+}
+
+.details  p {
+    color: #2d2e2f;
+    padding: 5px;
+    text-align: left;
+}
+
+
+
+
+.product:hover .details {
+    display: block;
+}
+
+.addCard {
+    color: black;
+    padding: 10px;
+    font-weight: 700;
+    background-color: #FFC301;
+    text-decoration: none;
+}
+
+.addCard:hover {
+    background-color: #d9a702;
+}
+
+.rightSide .bottom {
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+}
+
+.rightSide .bottom button {
+    margin: 110px;
+}
+
+.rightSide .bottom img {
+    width: 40%;
+    float: left;
+    padding: 10px
+}
+
+
+/****************************************************************/
+
+@media screen and (max-width:600px) {
+    nav {
+        background-color: #262626;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 0 4%;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom:
+    }
+    nav ul li:hover {}
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 0px;
+        font-size: 20px;
+    }
+    nav ul li a:active {
+        color: #b9095b;
+    }
+    nav ul li a:hover {}
+    nav ul .home ul {
+        display: none;
+    }
+    nav ul .home:hover {
+        display: block;
+        margin: 100px;
+    }
+    .leftSide {
+        margin: 5px;
+        background-color: white;
+        width: 100%;
+        float: left;
+    }
+    .rightSide {
+        margin: 5px;
+        width: 100%;
+        float: left;
+    }
+    .content {
+        margin: 5px;
+        width: 100%;
+        float: left;
+    }
+    .product {
+        border: 2px solid #262626;
+        float: left;
+        background-color: white;
+        margin: 9px;
+        width: 80%;
+    }
+}

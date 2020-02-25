@@ -1,0 +1,89 @@
+body {
+    font-family: "Expo Arabic";
+    direction: rtl;
+}
+
+fieldset {
+    width: 1000px;
+    margin: 0px auto;
+    /*background: linear-gradient(#d86319, #FCB01A);*/
+    background-color: #3292de;
+    color: #281f36;
+    border-radius: 10px;
+    text-align: right;
+    border: 0 solid;
+}
+
+fieldset span {
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+fieldset legend {
+    background-color: #f50000;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+fieldset label {
+    font-weight: 550;
+    margin: 30px 10px;
+}
+
+fieldset legend:hover span {
+    visibility: visible;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    border: 0;
+    background-color: #f8f6f6;
+    width: 50%;
+    margin: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#currency{
+    margin: 10px;
+    padding: 8px 30px;
+    border-radius: 10px;
+    background-color: #f8f6f6;
+}
+
+input[type="submit"] {
+    padding: 10px 50px;
+    margin-top: 10px;
+    margin-right: 13%;
+    border-radius: 5px;
+    background-color: #bc1a52;
+    border: 0;
+    color: white;
+}
+
+.tiptext {
+    display: block;
+}
+
+table {
+    margin: auto;
+        margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px 85px;
+    color: #333;
+}
